@@ -5,7 +5,9 @@ const AutoLoad = require('fastify-autoload')
 
 module.exports = function (fastify, opts, next) {
   // Place here your custom code!
-
+  fastify.register(require('fastify-cors'), {
+    origin: '*'
+  })
   fastify.register(require('fastify-sensible'))
   fastify.register(require('./services/health'), { prefix: '/api' })
   fastify.register(require('./services/documents'), {
