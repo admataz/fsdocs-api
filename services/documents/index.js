@@ -4,7 +4,7 @@ const FSDocs = require('fsdocs')
 
 // we only support these types
 const mimeTypes = {
-  '.txt': 'text/plain', 
+  '.txt': 'text/plain',
   '.json': 'application/json',
   '.md': 'text/plain',
   '.csv': 'text/csv',
